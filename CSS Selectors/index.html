@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Selector</title>
+            <style>
+                div{
+                    width:200px;
+                    height:200px;
+                    background-color:red;
+                }
+
+                span#a1{
+                    display:block;
+                    width:200px;
+                    height:200px;
+                    background:green;
+                }
+                span.b1{
+                    display:block;
+                    width:200px;
+                    height:200px;
+                    background:pink;
+                }
+                a[href="https://www.google.com"]{
+                    display:block;
+                    width:200px;
+                    height:200px;
+                    background:lavender;
+                }
+                *{
+                    border:10px solid black;
+                  
+                }
+                div,span#a1,span.b1,a[href="https://www.google.com"]{
+                    display:inline-block;
+
+                }
+                h1::before{
+                    content:url('https://gifdb.com/images/high/emoji-icon-in-love-smiley-face-8z7th3woyvshqgcb.gif')
+                }
+                /* 8. CSS class Selector:
+                element: selector{
+                property:value;
+                }
+                */
+                div#c1:hover{
+                    background:green;
+                }
+            </style>
+        </head>
+        <body>
+            <div> CSS Element Selector</div>
+            <span id="a1">CSS Id Selector.#</span>
+            <span class="b1">CSS Selector Class</span>
+            <a href="https://www.google.com">CSS Attribute Selector</a>
+            <h1>CSS Pesudo Element Selector::</h1>
+            <div id="c1">Pesudo Class selector</div>
+
+
+            
+        </body>
+</html>
